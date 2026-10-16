@@ -1,0 +1,103 @@
+/* Reseta margens e define uma fonte moderna para a página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Caixa branca do formulário */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* Rótulos (Nomes dos campos) */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555555;
+}
+
+/* Caixas de entrada (Inputs) */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+/* Efeito azul ao clicar no input */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo padrão para os botões */
+button {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Botão Cadastrar (Verde) */
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    margin-right: 4%;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Botão Limpar (Cinza) */
+button[type="reset"] {
+    background-color: #6c757d;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #5a6268;
+}
+
+/* Alinha os botões lado a lado sem precisar de margens manuais */
+.botoes-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Ajusta o tamanho correto de cada botão dentro do container */
+.botoes-container button {
+    width: 48%; 
+    margin-right: 0; /* Remove a margem antiga */
+}
